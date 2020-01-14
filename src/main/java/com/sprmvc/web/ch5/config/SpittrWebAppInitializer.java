@@ -2,10 +2,7 @@ package com.sprmvc.web.ch5.config;
 
 import com.sprmvc.web.ch5.filters.MyFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import javax.servlet.Filter;
-import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletRegistration;
+import javax.servlet.*;
 
 public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
@@ -20,14 +17,14 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 
     @Override
     protected String[] getServletMappings() {
-        return new String[] { "/" };
+        return new String[] { "/", "*.service" };
     }
 
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setMultipartConfig(
-                new MultipartConfigElement("/tmp/spittr/uploads")
-        );
+                new MultipartConfigElement("c:\\upload",
+                        1111111111, 1111111111, 0));
     }
 
 //    @Override

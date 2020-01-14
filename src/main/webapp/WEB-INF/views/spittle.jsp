@@ -5,7 +5,6 @@
     <title>Title</title>
 </head>
 <body>
- hi
     <div class="spittleView">
         <div class="SpittleMessage>"><c:out value="${spittle.message} " /></div>
     </div>

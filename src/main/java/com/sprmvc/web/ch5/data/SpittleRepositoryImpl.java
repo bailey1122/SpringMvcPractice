@@ -23,4 +23,9 @@ public class SpittleRepositoryImpl implements SpittleRepository {
     public Spittle findOne(long spittleid) {
         return new Spittle("Spittle " + spittleid + " is found ", new Date());
     }
+
+    @Override
+    public Spittle save(Spittle spittle) {
+        return new Spittle();
+    }
 }

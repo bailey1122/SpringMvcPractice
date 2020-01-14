@@ -7,11 +7,14 @@ import java.util.Date;
 
 public class Spittle {
 
-    private final Long id;
-    private final String message;
-    private final Date time;
+    private Long id;
+
+    private String message;
+    private Date time;
     private Double latitude;
     private Double longitude;
+
+    public Spittle() {}
 
     public Spittle(String message, Date time) {
         this(message, time, null, null);

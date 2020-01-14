@@ -1,7 +1,7 @@
 package com.sprmvc.web.ch5.data;
 
-import com.sprmvc.web.ch5.Spitter;
-import org.springframework.stereotype.Repository;
+        import com.sprmvc.web.ch5.Spitter;
+        import org.springframework.stereotype.Repository;
 
 @Repository
 public class SpitterRepositoryImpl implements SpitterRepository{
