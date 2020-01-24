@@ -13,6 +13,5 @@
     <a href="<s:url value="/" />"><img
     src="<s:url value="/resources" />/images/smt.jpg"
     border="0"/></a>
-
 </body>
 </html>

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <s:message code="spittr.welcome" /><h1/>
+<%--    <s:message code="spittr.welcome" /><h1/>--%>
 
 </body>
 </html>

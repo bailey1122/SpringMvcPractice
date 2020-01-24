@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:ws="http://jax-ws.dev.java.net/spring/core" xmlns:wss="http://jax-ws.dev.java.net/spring/servlet"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://jax-ws.dev.java.net/spring/core
+        http://jax-ws.java.net/spring/core.xsd
+        http://jax-ws.dev.java.net/spring/servlet
+        http://jax-ws.java.net/spring/servlet.xsd">
+
+<!--    <wss:binding url="/ws/spitterServiceEndp">-->
+<!--        <wss:service>-->
+<!--                <ws:service bean="#spitterServiceEndp" />-->
+<!--        </wss:service>-->
+<!--    </wss:binding>-->
+
+<!--    <bean id="spitterServiceEndp" class="com.sprmvc.web.ch5.services.SpitterServiceEndpoint">-->
+<!--        <property name="spitterService" ref="spitterServiceImpl" />-->
+<!--    </bean>-->
+
+<!--    <bean id="spitterServiceImpl" class="com.sprmvc.web.ch5.services.SpitterServiceImpl" />-->
+
+
+</beans>

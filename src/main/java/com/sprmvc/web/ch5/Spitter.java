@@ -6,13 +6,14 @@ import org.hibernate.validator.constraints.Email;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
-public class Spitter {
+public class Spitter implements Serializable {
 
     private Long id;
 
     @NotNull
-    @Size(min=5, max=16, message="{firstName.size}")
+    @Size(min=5, max=16, message="{username.size}")
     private String username;
 
     @NotNull
@@ -102,5 +103,16 @@ public class Spitter {
     @Override
     public int hashCode() {
         return HashCodeBuilder.reflectionHashCode(this, "firstName", "lastName", "username", "password", "email");
+    }
+
+    @Override
+    public String toString() {
+        return "Spitter{" +
+                "username='"  + username + '\'' +
+                ", password=" + password +
+                ", firstName=" + firstName +
+                ", lastName=" + lastName +
+                ", email=" + email +
+                '}';
     }
 }

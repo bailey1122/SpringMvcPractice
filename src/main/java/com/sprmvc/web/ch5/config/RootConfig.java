@@ -1,6 +1,5 @@
 package com.sprmvc.web.ch5.config;
 
-import com.sprmvc.web.ch5.services.SpitterService;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.FilterType;
@@ -34,6 +33,4 @@ public class RootConfig {
 //        messageSource.setBasename("messages_es");
         return messageSource;
     }
-
-
 }

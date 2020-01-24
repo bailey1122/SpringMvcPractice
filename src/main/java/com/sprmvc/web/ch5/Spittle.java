@@ -3,18 +3,28 @@ package com.sprmvc.web.ch5;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Spittle {
+public class Spittle implements Serializable {
 
     private Long id;
-
     private String message;
     private Date time;
     private Double latitude;
     private Double longitude;
 
     public Spittle() {}
+
+    public Spittle(String message) {
+        this.message = message;
+    }
+
+    public Spittle(long id, String message, Date time) {
+        this.id = id;
+        this.message = message;
+        this.time = time;
+    }
 
     public Spittle(String message, Date time) {
         this(message, time, null, null);
@@ -57,5 +67,12 @@ public class Spittle {
     @Override
     public int hashCode() {
         return HashCodeBuilder.reflectionHashCode(this, "id", "time");
+    }
+
+    @Override
+    public String toString() {
+        return "Spittle{" +
+                "message=" + message +
+                '}';
     }
 }

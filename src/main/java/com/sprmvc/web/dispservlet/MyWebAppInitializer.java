@@ -1,7 +1,7 @@
-package com.sprmvc.web.dispservlet;
-
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
+//package com.sprmvc.web.dispservlet;
+//
+//import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+//
 //public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 //    @Override
 //    protected Class<?>[] getRootConfigClasses() {
